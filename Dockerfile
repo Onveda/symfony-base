@@ -41,7 +41,7 @@ RUN mkdir /composer && chmod 777 /composer
 
 RUN echo "memory_limit=-1" > "$PHP_INI_DIR/conf.d/memory-limit.ini"
 
-COPY docker/app/install_composer.sh /tmp/install_composer.sh
+COPY install_composer.sh /tmp/install_composer.sh
 
 RUN chmod +x /tmp/install_composer.sh
 
