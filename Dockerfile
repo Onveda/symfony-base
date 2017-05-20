@@ -14,7 +14,6 @@ RUN apt-get update \
         openssl \
         unzip \
         wget \
-        yarn \
         zlib1g-dev \
         zip
 
