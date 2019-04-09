@@ -16,6 +16,7 @@ FROM php:7.2-fpm-alpine
 # copy Composer files from Composer image
 COPY --from=composer /usr/bin/composer /usr/bin/composer
 
+
 ## Install Redis
 ENV REDIS_VERSION 4.3.0
 
