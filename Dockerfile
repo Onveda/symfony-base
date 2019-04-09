@@ -18,6 +18,6 @@ COPY --from=composer /usr/bin/composer /usr/bin/composer
 
 # Install recommended extensions for Symfony
 RUN apk update && apk add \
-        icu-dev zip unzip libzip-dev libpng-dev git libxrender fontconfig freetype
+        icu-dev zip unzip libzip-dev libpng-dev git libxrender fontconfig freetype php7-pecl-redis
         
 RUN docker-php-ext-install zip pdo_mysql intl opcache pdo mysqli gd
